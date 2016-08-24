@@ -28,7 +28,6 @@
     "recursive"
   ],
   "license": "Apache-2.0",
-  "main": "keyarray-delete.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/kemitchell/keyarray-delete.js.git"
