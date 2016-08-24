@@ -2,7 +2,10 @@
   "name": "keyarray-delete",
   "description": "delete nested properties with key arrays",
   "version": "0.1.0",
-  "author":"Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com)",
+  "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com)",
+  "files": [
+    "index.js"
+  ],
   "dependencies": {
     "keyarray-get": "0.1.x"
   },
@@ -21,7 +24,7 @@
     "recursive"
   ],
   "license": "MIT",
-  "repository":"kemitchell/keyarray-delete.js",
+  "repository": "kemitchell/keyarray-delete.js",
   "scripts": {
     "test": "defence -i javascript README.md | replace-require-self | node",
     "lint": "standard"
