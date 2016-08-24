@@ -10,5 +10,3 @@ module.exports = function(object, keyArray) {
     return true;
   }
 };
-
-module.exports.version = '0.1.0';
