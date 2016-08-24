@@ -1,5 +1,6 @@
 ```javascript
-var del = require('keyarray-delete');
+var del = require('keyarray-delete')
+var assert = require('assert')
 
 var anObject = {
   a: {
@@ -8,13 +9,15 @@ var anObject = {
   }
 }
 
-del(anObject, ['a', 'b']) // === true
+assert(del(anObject, ['a', 'b']) === true)
 
-anObject.a.hasOwnProperty('b') // === false
+assert(anObject.a.hasOwnProperty('b') === false)
 
-anObject.a.c // === 'another'
+assert(anObject.a.c === 'another')
 
-del(anObject, ['nonexistent']) // === true
+assert(del(anObject, ['nonexistent']) === true)
 
-del(anObject, ['nonexistent', 'key']) // throws TypeError
+assert.throws(function () {
+  del(anObject, ['nonexistent', 'key'])
+}, TypeError)
 ```
